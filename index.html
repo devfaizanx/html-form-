@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration form</h1>
+    <form action="post">
+        <div>
+        <label for="Full Name">Full Name:</label>
+        <input type="text" name="Full name" id="Full name">
+    </div>
+    <div>
+        <br>
+        <label for="Email Address">Email Address:</label>
+        <input type="Email Address" name="Email Address" id="Email Address">
+    </div>
+    <div>
+        <br>
+        <label for="Password"> Password:</label>
+        <input type="password" name="password" id="password">
+    </div>
+       <h2>Date of birth:<input type="date"></h2>
+       <form>
+        <DIv>
+        <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" value="Male">Male
+        </label>
+
+        <label>
+            <input type="radio" name="Gender" value="Female"> Female
+        </label>
+         </Div>
+         <DIv>
+            <h3>COURSE</h3><select name="COURSE"><option value="HTML">HTML</option><option value="CSS">CSS</option><option value="JAVA">JAVA</option>
+        </select>
+         </DIv>
+         <h4>Skill You Have</h4>
+         <label for="skill you have"></label>
+            <input type="radio" name="skill you have" value="html">Html
+        </label>
+        <br>
+        <label for="skill you have"></label>
+            <input type="radio" name="skill you have" value="CSS">CSS
+        </label>
+        <br>
+        <label for="skill you have"></label>
+            <input type="radio" name="skill you have" value="java">java
+        </label>
+        <h5>Additional Comments</h5>
+        <label for="comments"></label>
+          <textarea name="comments" id="comments" rows="4" placeholder="Enter your comments">
+          </textarea>
+          <h6>Upload Your File:</h6>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="myfile" id="fileInput">
+    <br><br>
+    <input type="submit" value="Upload File">
+    <br><br>
+    <input type="submit" value="Register">
+    </form>
+</body>
+</html>
